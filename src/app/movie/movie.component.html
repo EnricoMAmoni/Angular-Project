@@ -29,16 +29,19 @@
     </div>
     <div class="bottom">
         <h4 class="title">Reviews</h4>
-        <div class="reviews">
+        <div class="reviews" *ngIf="movie?.reviews?.lenght > 0">
             <div class="review" *ngFor="let review of movie?.reviews">
                 <div class="review-details">
                     <div class="review-left">
                         <div class="author">{{review.author}}</div>
-                        <div class="author_dt">{{review.published_on}}</div>
+                        <div class="author_dt">{{review.published_on | date: "dd-MMM-YYYY"}}</div>
                     </div>
                     <div class="review-right"></div>
                 </div>
             </div>
+        </div>
+        <div class="reviews" *ngIf="movie?.reviews?.lenght === 0">
+            <div class="no-reviews">No reviews yet</div>
         </div>
     </div>
 </div>

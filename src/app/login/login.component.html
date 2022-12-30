@@ -1,19 +1,31 @@
+
+
+
 <div class="login-container">
-    <img class="film" src="assets/images/film.png" alt="">
-    <div class="logo">myVid</div>
-    <div class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit eveniet, fuga corporis mollitia ab unde exercitationem ipsa nesciunt veniam, laudantium quidem qui ex eos. Atque, cupiditate ratione? Assumenda, nam consequatur?</div>
-</div>
-<div class="login-form">
-    <div class="form-group">
-        <label for="uname">Username</label>
-        <input type="text" name="uname" class="form-control" [(ngModel)]="username">
-    </div>
-    <div class="form-group">
-        <label for="pword">Password</label>
-        <input type="password" name="pword" class="form-control" [(ngModel)]="password">
-    </div>
-    <div class="btn-container">
-        <div class="error">{{errorMsg}}</div>
-        <button class="btn btn-dark" (click)="login()">Login</button>
+    <div class="row">
+        <div class="col-12 md-6">
+            <div class="logo">
+               <div>vidD</div> 
+                <div>vi</div>
+            </div>
+            <div class="logo2">Personal Area</div>
+            <div class="point"><span class="point2">.</span>.<span class="point2">.</span></div>
+            
+            <div class="login-form">
+                <div class="form-group">
+                    <label for="uname">Username</label>
+                    <input type="text" name="uname" class="form-control" [(ngModel)]="username">
+                </div>
+                <div class="form-group">
+                    <label for="pword">Password</label>
+                    <input type="password" name="pword" class="form-control" [(ngModel)]="password">
+                </div>
+                <div class="btn-container">
+                    <div class="error">{{errorMsg}}</div>
+                    <button class="btn btn-dark" (click)="login()">Login</button>
+                </div>
+            </div>
+        
+        </div>
     </div>
 </div>

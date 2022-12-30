@@ -1,7 +1,8 @@
 .header-container{
     width: 100%;
     height: 80%;
-    background-color: #fdc827;
+    background: linear-gradient(169deg, rgba(0,0,0,0.8412407199207808) 0%, rgba(0,0,0,1) 16%, rgba(98,98,99,1) 100%, rgba(242,242,242,1) 100%);
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -9,16 +10,17 @@
 
 .logo{
     font-size: 24px;
-    font-weight: bold;
-    font-family: 'Creepster', cursive;
+    color: white;
     letter-spacing: 4px;
     margin-left: 40px;
     cursor: pointer;
+    font-family: 'Prosto One', cursive;
 }
 
 .logout{
     font-size: 18px;
-    font-weight: bold;
+    color: whitesmoke;
     margin-right: 40px;
     cursor: pointer;
+    font-family: 'Prosto One', cursive;
 }
